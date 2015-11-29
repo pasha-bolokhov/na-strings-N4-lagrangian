@@ -1,0 +1,61 @@
+\documentclass[14pt]{article}
+\usepackage{amsmath}
+
+\newcommand{\slashed}[1]{\hbox{{$#1$}\llap{$/$}}}
+\begin{document}
+
+\begin{center}
+        {\Large\bf\underline{N=4 $\to$ N=1 Lagrangian}}
+\end{center}
+
+\vspace{1.5cm}
+	The N=4 lagrangian with N=4, N=2, N=1 superpotentials after
+	all auxiliary fields have been resolved for:
+
+\begin{eqnarray*}
+	{\mathcal L }& =& \frac{1}{g^2}
+	\Biggl\{  - \left(\overline{{\mathcal D}_\mu \phi_A }\right)^a
+		   \left({\mathcal D}_\mu \phi_A \right)^a     +
+   	   \frac{i}{4} \bigl[ \chi_A^a\sigma^\mu
+			\left({\mathcal D}_\mu\overline{\chi_A}\right)^a +
+			\overline{\chi_A^a\sigma^\mu}
+			\left({\mathcal D}_\mu\chi_A\right)^a  
+		       \bigr]  + \\
+&&
+	   +~ \overline{\phi_A^a}\left\{\lambda\chi_A\right\}^a +
+	   \left\{\overline{\chi_A\lambda}\right\}^a \phi_A^a + \\
+% pure vector components
+%
+&&	   +~ \frac{i}{2}\bigl[ \lambda^a\slashed\partial\overline{\lambda^a} +
+			     \overline{\lambda^a\slashed\partial}
+					\lambda^a \bigr]   - 
+	   \frac{1}{4} f^a_{\mu\nu}f^{a,\mu\nu} + \\
+%% components from resolution of auxiliary fields
+%%
+&&	   + ~\frac{1}{2} \Bigl[\,
+		\Bigl(\overline{\phi^a_A\phi^a_B}\Bigr)
+		\Bigl(\phi^b_A\phi^b_B\Bigr)  -
+		\Bigl(\overline{\phi^a_A}\phi^a_B\Bigr)
+		\Bigl(\overline{\phi^b_B}\phi^b_A\Bigr)
+			\,\Bigr] - \\
+&&	   - ~\left| \frac{1}{\sqrt{2}}\epsilon_{abc}\epsilon^{ABC}
+				\phi^a_A\phi^b_B  - m_C\phi^c_C \right|^2 +
+%% two more terms
+%%
+	    \frac{\sqrt{2}}{4}\epsilon_{abc}\epsilon^{ABC}
+		\left\{\chi_A^a\chi_B^b\phi_C^c 
+			+ \overline{\chi_A^a\chi_B^b\phi_C^c}
+		\right\} - \\
+&&	   - ~\frac{1}{4} m_A 
+		\left\{ \chi_A^a\chi_A^a + 
+			\overline{\chi_A^a\chi_A^a} \right\}
+	\Biggr\}  
+\end{eqnarray*}
+
+  	where the gauge derivatives are both
+\begin{eqnarray*}
+	{\mathcal D}_\mu = \partial_\mu + i~[ v_\mu, ~\cdot ~]	\\
+	\overline{{\mathcal D}_\mu} = \partial_\mu + i~[ v_\mu, ~\cdot ~]
+\end{eqnarray*}
+
+\end{document}
